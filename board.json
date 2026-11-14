@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "updated_at": "2026-11-13T17:51:38Z",
+  "runs": {
+    "utc": [
+      "17:46",
+      "20:46"
+    ],
+    "days": "mon-fri"
+  },
+  "totals": {
+    "questions": 14,
+    "experiments": 6,
+    "sealed": 5,
+    "open": 1,
+    "failed": 1,
+    "held_up": 0,
+    "sessions": 13
+  },
+  "fingerprint_of": "sha256 of the claim, a newline, then the test (UTF-8)",
+  "questions": [
+    {
+      "id": "d-minimal-ecologies",
+      "question": "What are the smallest rule sets for agents on a grid that produce populations which persist and cycle instead of dying out or exploding?"
+    }
+  ],
+  "experiments": [
+    {
+      "id": "x-522f7725",
+      "state": "sealed",
+      "fingerprint": "522f772555ba3c01a38f950a553a89dc5bd74a7349fbd4d12b90946a5b7cbbec",
+      "fixed_at": "2026-11-09T16:05:12Z",
+      "stage": "designed"
+    },
+    {
+      "id": "x-52b33a36",
+      "state": "sealed",
+      "fingerprint": "52b33a36ef0452838aa4404a5684fa59226aa5eb9e14774b21e89d7951b2bdd6",
+      "fixed_at": "2026-11-09T16:05:12Z",
+      "stage": "designed"
+    },
+    {
+      "id": "x-9fa444c8",
+      "state": "sealed",
+      "fingerprint": "9fa444c8db3770eb5f597ea7fe65224cf404f10ca3af536712d1f04686c847ad",
+      "fixed_at": "2026-11-09T16:05:12Z",
+      "stage": "designed"
+    },
+    {
+      "id": "me-6bit-cycler",
+      "state": "open",
+      "fingerprint": "30e252d172ed2a8472acafd1cd172ebd811368b3fc9c9573eeb8708717a2e5cc",
+      "fixed_at": "2026-11-10T17:55:00Z",
+      "claim": "Among the 64 six-bit two-species rule sets of eco2 on a 32×32 torus, at least one cycles (predator density autocorrelation goes below −0.2 and back above +0.2 with both species alive at 2000 steps) in at least 36 of 40 seeds.",
+      "test": "kill test: in a fresh run folder, use the simulator ~/meta-research/lab/_minimal-ecologies-sim/eco2.c with sha256 146f226b2a413a64d3d0e12b284b0865dee829ef6a197b21c66dc15a20d4463f (refuse to run if it differs), built with `gcc -O2 -o eco2 eco2.c -lm`. Control: `./eco2 selftest` must print `selftest PASS` and exit 0 (planted sine → cycling, AR(1) noise → noisy, 50 AR(0.9) noise series → at most 3 called cycling, constant → fixed, a run with no predators → prey-only). Test: `timeout 1800 ./eco2 census 32 2000 40 1000 > census.txt` (all 64 rules, seeds 1000–1039; one line per rule: rule extinct prey-only pred-only fixed noisy cycling). Save census.txt and the selftest output. Let c(r) be the cycling count of rule r. favorable if the control passes, census.txt has 64 rule lines (lines not starting with #), and max over r of c(r) ≥ 36 · unfavorable if the control passes, census.txt has 64 rule lines (lines not starting with #), and max c(r) ≤ 20 · uninformative otherwise (control fails, timeout, fewer than 64 lines, or 21 ≤ max c(r) ≤ 35).",
+      "verdict": "failed",
+      "judged_at": "2026-11-11T17:59:55Z",
+      "found": "All 64 of the simplest predator-and-prey rule sets were run on a small grid, 40 times each. None gave lasting boom-and-bust cycles: in every run the predators ate all the prey.",
+      "question": "d-minimal-ecologies"
+    },
+    {
+      "id": "x-a0dac576",
+      "state": "sealed",
+      "fingerprint": "a0dac576591c6766f561c97568ec046a2dcbb6dfd918582a7bea91b8b4be4cc4",
+      "fixed_at": "2026-11-10T17:55:00Z",
+      "stage": "inconclusive"
+    },
+    {
+      "id": "x-e16d2938",
+      "state": "sealed",
+      "fingerprint": "e16d2938de84d8a4cf17056412f2f0e329f4e91c10223a0375caefcc78e7b143",
+      "fixed_at": "2026-11-10T17:55:00Z",
+      "stage": "inconclusive"
+    }
+  ],
+  "timeline": [
+    {
+      "at": "2026-11-09T16:05:12Z",
+      "what": "designed",
+      "experiment": "x-522f7725"
+    },
+    {
+      "at": "2026-11-09T16:05:12Z",
+      "what": "designed",
+      "experiment": "x-52b33a36"
+    },
+    {
+      "at": "2026-11-09T16:05:12Z",
+      "what": "designed",
+      "experiment": "x-9fa444c8"
+    },
+    {
+      "at": "2026-11-09T22:20:53Z",
+      "what": "design round",
+      "experiment": null,
+      "result": "no experiment passed review"
+    },
+    {
+      "at": "2026-11-10T17:55:00Z",
+      "what": "designed",
+      "experiment": "me-6bit-cycler"
+    },
+    {
+      "at": "2026-11-10T17:55:00Z",
+      "what": "designed",
+      "experiment": "x-e16d2938"
+    },
+    {
+      "at": "2026-11-10T17:55:00Z",
+      "what": "designed",
+      "experiment": "x-a0dac576"
+    },
+    {
+      "at": "2026-11-11T17:49:46Z",
+      "what": "ran",
+      "experiment": "me-6bit-cycler",
+      "result": null
+    },
+    {
+      "at": "2026-11-11T17:59:55Z",
+      "what": "checked",
+      "experiment": "me-6bit-cycler",
+      "result": "failed"
+    },
+    {
+      "at": "2026-11-12T17:48:28Z",
+      "what": "ran",
+      "experiment": "x-e16d2938",
+      "result": null
+    },
+    {
+      "at": "2026-11-12T17:51:31Z",
+      "what": "checked",
+      "experiment": "x-e16d2938",
+      "result": "inconclusive"
+    },
+    {
+      "at": "2026-11-13T17:48:16Z",
+      "what": "ran",
+      "experiment": "x-a0dac576",
+      "result": null
+    },
+    {
+      "at": "2026-11-13T17:51:38Z",
+      "what": "checked",
+      "experiment": "x-a0dac576",
+      "result": "inconclusive"
+    }
+  ]
+}
