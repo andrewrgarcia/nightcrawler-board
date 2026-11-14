@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "updated_at": "2026-11-13T17:51:38Z",
   "runs": {
     "utc": [
@@ -21,7 +21,88 @@
   "questions": [
     {
       "id": "d-minimal-ecologies",
-      "question": "What are the smallest rule sets for agents on a grid that produce populations which persist and cycle instead of dying out or exploding?"
+      "state": "open",
+      "fingerprint": "abbe6d9d51df76c6e75cb35cdc087677dd6f3713941ab66336751d6dd1d03c68",
+      "question": "What are the smallest rule sets for agents on a grid that produce populations which persist and cycle instead of dying out or exploding?",
+      "born": "2026-11-09"
+    },
+    {
+      "id": "q-115e7bca",
+      "state": "sealed",
+      "fingerprint": "115e7bcad1a1a8a920fab5072f36d1a8078cfea4ca8c082eb64e51494cd90dfc",
+      "born": "2026-11-09"
+    },
+    {
+      "id": "q-212b3d1c",
+      "state": "sealed",
+      "fingerprint": "212b3d1c5083c0c499cd1093449ce7424e1e1a070ccc3beee3de89f3949feb4b",
+      "born": "2026-11-14"
+    },
+    {
+      "id": "q-37102160",
+      "state": "sealed",
+      "fingerprint": "37102160b71b10b41bcde177dc1e6e7fb8b4dbe524493e0527eaa62dcba1c351",
+      "born": "2026-11-14"
+    },
+    {
+      "id": "q-80d7f053",
+      "state": "sealed",
+      "fingerprint": "80d7f05327bc1e21459772e2680e8bc2ddfac2e0a1bebb3d415a2490e9b10aa9",
+      "born": "2026-11-14"
+    },
+    {
+      "id": "q-8e3fec74",
+      "state": "sealed",
+      "fingerprint": "8e3fec742504f0b5281034fa3342a049ed93385b6b84ba8454a853db84a2b798",
+      "born": "2026-11-09"
+    },
+    {
+      "id": "q-b9b298cb",
+      "state": "sealed",
+      "fingerprint": "b9b298cb60ab83e279b06a991d2c0727c489599f0b031097fd28cb5569aec6ec",
+      "born": "2026-11-14"
+    },
+    {
+      "id": "q-d26a83d3",
+      "state": "sealed",
+      "fingerprint": "d26a83d335ff33de3cc9d2e11016b19059131ad8746847f75826e40826debabf",
+      "born": "2026-11-14"
+    },
+    {
+      "id": "q-d6b1f9b8",
+      "state": "sealed",
+      "fingerprint": "d6b1f9b8f38323f3503c3f82637a01c46c179ef953e61d5889d4eddb03e41843",
+      "born": "2026-11-14"
+    },
+    {
+      "id": "q-d7177f8c",
+      "state": "sealed",
+      "fingerprint": "d7177f8cbb5ebee071903bb32eb612ac36153a4de12f8bd5f1cc1e4be5bf7cd1",
+      "born": "2026-11-14"
+    },
+    {
+      "id": "q-e9fdbf4b",
+      "state": "sealed",
+      "fingerprint": "e9fdbf4bbd02c8ff7756f0ad4159e5505c8291f90e59c4361cac1173af3f05b9",
+      "born": "2026-11-14"
+    },
+    {
+      "id": "q-f8a441fa",
+      "state": "sealed",
+      "fingerprint": "f8a441fa70ec718ccf9d00c43a4e56b3460f83635f58ba9df109c4dfc6792af8",
+      "born": "2026-11-14"
+    },
+    {
+      "id": "q-fecdbf71",
+      "state": "sealed",
+      "fingerprint": "fecdbf713e78d22a51c147fd85983df8c16edcc93ffb575c0b4d156b8590f601",
+      "born": "2026-11-14"
+    },
+    {
+      "id": "q-fedfa746",
+      "state": "sealed",
+      "fingerprint": "fedfa746c9ec6a958a2deb42d0a7d16cf1ee3953eecaa9f9e4c1751c9aac5bf0",
+      "born": "2026-11-09"
     }
   ],
   "experiments": [
@@ -30,21 +111,24 @@
       "state": "sealed",
       "fingerprint": "522f772555ba3c01a38f950a553a89dc5bd74a7349fbd4d12b90946a5b7cbbec",
       "fixed_at": "2026-11-09T16:05:12Z",
-      "stage": "designed"
+      "stage": "designed",
+      "question": "q-8e3fec74"
     },
     {
       "id": "x-52b33a36",
       "state": "sealed",
       "fingerprint": "52b33a36ef0452838aa4404a5684fa59226aa5eb9e14774b21e89d7951b2bdd6",
       "fixed_at": "2026-11-09T16:05:12Z",
-      "stage": "designed"
+      "stage": "designed",
+      "question": "q-8e3fec74"
     },
     {
       "id": "x-9fa444c8",
       "state": "sealed",
       "fingerprint": "9fa444c8db3770eb5f597ea7fe65224cf404f10ca3af536712d1f04686c847ad",
       "fixed_at": "2026-11-09T16:05:12Z",
-      "stage": "designed"
+      "stage": "designed",
+      "question": "q-8e3fec74"
     },
     {
       "id": "me-6bit-cycler",
@@ -63,88 +147,107 @@
       "state": "sealed",
       "fingerprint": "a0dac576591c6766f561c97568ec046a2dcbb6dfd918582a7bea91b8b4be4cc4",
       "fixed_at": "2026-11-10T17:55:00Z",
-      "stage": "inconclusive"
+      "stage": "inconclusive",
+      "question": "d-minimal-ecologies"
     },
     {
       "id": "x-e16d2938",
       "state": "sealed",
       "fingerprint": "e16d2938de84d8a4cf17056412f2f0e329f4e91c10223a0375caefcc78e7b143",
       "fixed_at": "2026-11-10T17:55:00Z",
-      "stage": "inconclusive"
+      "stage": "inconclusive",
+      "question": "d-minimal-ecologies"
     }
   ],
   "timeline": [
     {
       "at": "2026-11-09T16:05:12Z",
       "what": "designed",
-      "experiment": "x-522f7725"
+      "experiment": "x-522f7725",
+      "by": "person"
     },
     {
       "at": "2026-11-09T16:05:12Z",
       "what": "designed",
-      "experiment": "x-52b33a36"
+      "experiment": "x-52b33a36",
+      "by": "person"
     },
     {
       "at": "2026-11-09T16:05:12Z",
       "what": "designed",
-      "experiment": "x-9fa444c8"
+      "experiment": "x-9fa444c8",
+      "by": "person"
     },
     {
       "at": "2026-11-09T22:20:53Z",
       "what": "design round",
       "experiment": null,
+      "by": "crawler",
       "result": "no experiment passed review"
     },
     {
       "at": "2026-11-10T17:55:00Z",
       "what": "designed",
-      "experiment": "me-6bit-cycler"
+      "experiment": "me-6bit-cycler",
+      "by": "crawler"
     },
     {
       "at": "2026-11-10T17:55:00Z",
       "what": "designed",
-      "experiment": "x-e16d2938"
+      "experiment": "x-e16d2938",
+      "by": "crawler"
     },
     {
       "at": "2026-11-10T17:55:00Z",
       "what": "designed",
-      "experiment": "x-a0dac576"
+      "experiment": "x-a0dac576",
+      "by": "crawler"
     },
     {
       "at": "2026-11-11T17:49:46Z",
       "what": "ran",
       "experiment": "me-6bit-cycler",
+      "by": "crawler",
       "result": null
     },
     {
       "at": "2026-11-11T17:59:55Z",
       "what": "checked",
       "experiment": "me-6bit-cycler",
+      "by": "crawler",
       "result": "failed"
     },
     {
       "at": "2026-11-12T17:48:28Z",
       "what": "ran",
       "experiment": "x-e16d2938",
+      "by": "crawler",
       "result": null
     },
     {
       "at": "2026-11-12T17:51:31Z",
       "what": "checked",
       "experiment": "x-e16d2938",
+      "by": "crawler",
       "result": "inconclusive"
     },
     {
       "at": "2026-11-13T17:48:16Z",
       "what": "ran",
       "experiment": "x-a0dac576",
+      "by": "crawler",
       "result": null
     },
     {
       "at": "2026-11-13T17:51:38Z",
       "what": "checked",
       "experiment": "x-a0dac576",
+      "by": "crawler",
       "result": "inconclusive"
     }
+  ],
+  "interventions": [
+    "2026-11-09",
+    "2026-11-14"
   ]
 }
