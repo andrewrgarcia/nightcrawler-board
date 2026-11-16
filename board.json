@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated_at": "2026-11-16T18:00:00Z",
+  "updated_at": "2026-11-16T21:00:00Z",
   "runs": {
     "utc": [
       "17:46",
@@ -10,12 +10,12 @@
   },
   "totals": {
     "questions": 14,
-    "experiments": 9,
-    "sealed": 8,
+    "experiments": 10,
+    "sealed": 9,
     "open": 1,
     "failed": 1,
     "held_up": 0,
-    "sessions": 17
+    "sessions": 19
   },
   "fingerprint_of": "sha256 of the claim, a newline, then the test (UTF-8)",
   "questions": [
@@ -181,6 +181,14 @@
       "fixed_at": "2026-11-16T17:55:00Z",
       "stage": "designed",
       "question": "d-minimal-ecologies"
+    },
+    {
+      "id": "x-eca1af52",
+      "state": "sealed",
+      "fingerprint": "eca1af52df5973466e84671c4e064a5700df8a9868fa22c1948a71e7d94a08c1",
+      "fixed_at": "2026-11-16T20:52:00Z",
+      "stage": "designed",
+      "question": "q-d7177f8c"
     }
   ],
   "timeline": [
@@ -289,6 +297,19 @@
     },
     {
       "at": "2026-11-16T18:00:00Z",
+      "what": "design round",
+      "experiment": null,
+      "by": "crawler",
+      "result": "no experiment passed review"
+    },
+    {
+      "at": "2026-11-16T20:52:00Z",
+      "what": "designed",
+      "experiment": "x-eca1af52",
+      "by": "crawler"
+    },
+    {
+      "at": "2026-11-16T21:00:00Z",
       "what": "design round",
       "experiment": null,
       "by": "crawler",
