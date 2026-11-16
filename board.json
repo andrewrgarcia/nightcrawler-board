@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated_at": "2026-11-13T17:51:38Z",
+  "updated_at": "2026-11-16T18:00:00Z",
   "runs": {
     "utc": [
       "17:46",
@@ -10,12 +10,12 @@
   },
   "totals": {
     "questions": 14,
-    "experiments": 6,
-    "sealed": 5,
+    "experiments": 9,
+    "sealed": 8,
     "open": 1,
     "failed": 1,
     "held_up": 0,
-    "sessions": 13
+    "sessions": 17
   },
   "fingerprint_of": "sha256 of the claim, a newline, then the test (UTF-8)",
   "questions": [
@@ -157,6 +157,30 @@
       "fixed_at": "2026-11-10T17:55:00Z",
       "stage": "inconclusive",
       "question": "d-minimal-ecologies"
+    },
+    {
+      "id": "x-c4fc7280",
+      "state": "sealed",
+      "fingerprint": "c4fc72805b5e85fd3292d8645cc67aa81f33ae4ec8f322b9df879db34f252a12",
+      "fixed_at": "2026-11-16T17:55:00Z",
+      "stage": "designed",
+      "question": "d-minimal-ecologies"
+    },
+    {
+      "id": "x-d57cce3e",
+      "state": "sealed",
+      "fingerprint": "d57cce3e7ee89fa0e9ac74e8c0108f62f2fd115b0c2b52e5d0647735faa835e9",
+      "fixed_at": "2026-11-16T17:55:00Z",
+      "stage": "designed",
+      "question": "d-minimal-ecologies"
+    },
+    {
+      "id": "x-f17603fb",
+      "state": "sealed",
+      "fingerprint": "f17603fb9a773061d25082f98f29b9060fa97daf40dbd2e1401a34d7f0544008",
+      "fixed_at": "2026-11-16T17:55:00Z",
+      "stage": "designed",
+      "question": "d-minimal-ecologies"
     }
   ],
   "timeline": [
@@ -244,6 +268,31 @@
       "experiment": "x-a0dac576",
       "by": "crawler",
       "result": "inconclusive"
+    },
+    {
+      "at": "2026-11-16T17:55:00Z",
+      "what": "designed",
+      "experiment": "x-c4fc7280",
+      "by": "crawler"
+    },
+    {
+      "at": "2026-11-16T17:55:00Z",
+      "what": "designed",
+      "experiment": "x-d57cce3e",
+      "by": "crawler"
+    },
+    {
+      "at": "2026-11-16T17:55:00Z",
+      "what": "designed",
+      "experiment": "x-f17603fb",
+      "by": "crawler"
+    },
+    {
+      "at": "2026-11-16T18:00:00Z",
+      "what": "design round",
+      "experiment": null,
+      "by": "crawler",
+      "result": "no experiment passed review"
     }
   ],
   "interventions": [
