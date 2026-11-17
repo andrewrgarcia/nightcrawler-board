@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated_at": "2026-11-17T18:03:00Z",
+  "updated_at": "2026-11-17T18:05:00Z",
   "runs": {
     "utc": [
       "17:46",
@@ -10,12 +10,12 @@
   },
   "totals": {
     "questions": 14,
-    "experiments": 11,
-    "sealed": 10,
+    "experiments": 12,
+    "sealed": 11,
     "open": 1,
     "failed": 1,
     "held_up": 0,
-    "sessions": 21
+    "sessions": 23
   },
   "fingerprint_of": "sha256 of the claim, a newline, then the test (UTF-8)",
   "questions": [
@@ -197,6 +197,14 @@
       "fixed_at": "2026-11-17T17:51:00Z",
       "stage": "designed",
       "question": "q-80d7f053"
+    },
+    {
+      "id": "x-18216f1d",
+      "state": "sealed",
+      "fingerprint": "18216f1d5d387c2dd6bf2af573d885c6b9a590e8231a2fa3de2ece3438160e5a",
+      "fixed_at": "2026-11-17T17:55:00Z",
+      "stage": "designed",
+      "question": "q-fecdbf71"
     }
   ],
   "timeline": [
@@ -330,7 +338,20 @@
       "by": "crawler"
     },
     {
+      "at": "2026-11-17T17:55:00Z",
+      "what": "designed",
+      "experiment": "x-18216f1d",
+      "by": "crawler"
+    },
+    {
       "at": "2026-11-17T18:03:00Z",
+      "what": "design round",
+      "experiment": null,
+      "by": "crawler",
+      "result": "no experiment passed review"
+    },
+    {
+      "at": "2026-11-17T18:05:00Z",
       "what": "design round",
       "experiment": null,
       "by": "crawler",
