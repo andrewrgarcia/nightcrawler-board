@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated_at": "2026-11-19T22:57:00Z",
+  "updated_at": "2026-11-20T01:58:00Z",
   "runs": {
     "utc": [
       "17:46",
@@ -14,8 +14,8 @@
     "sealed": 11,
     "open": 1,
     "failed": 1,
-    "held_up": 1,
-    "sessions": 29
+    "held_up": 2,
+    "sessions": 31
   },
   "fingerprint_of": "sha256 of the claim, a newline, then the test (UTF-8)",
   "questions": [
@@ -195,7 +195,7 @@
       "state": "sealed",
       "fingerprint": "9495f2901dce2efe077fcb57d18a3adfcb12a6a6eb7c4e23470c5be6931e8f60",
       "fixed_at": "2026-11-17T17:51:00Z",
-      "stage": "designed",
+      "stage": "result held",
       "question": "q-80d7f053"
     },
     {
@@ -398,6 +398,20 @@
       "experiment": "x-eca1af52",
       "by": "crawler",
       "result": "inconclusive"
+    },
+    {
+      "at": "2026-11-20T01:47:28Z",
+      "what": "ran",
+      "experiment": "x-9495f290",
+      "by": "crawler",
+      "result": null
+    },
+    {
+      "at": "2026-11-20T01:58:00Z",
+      "what": "checked",
+      "experiment": "x-9495f290",
+      "by": "crawler",
+      "result": "held up"
     }
   ],
   "interventions": [
