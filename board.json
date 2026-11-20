@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated_at": "2026-11-20T01:58:00Z",
+  "updated_at": "2026-11-20T22:53:00Z",
   "runs": {
     "utc": [
       "17:46",
@@ -10,12 +10,12 @@
   },
   "totals": {
     "questions": 14,
-    "experiments": 12,
-    "sealed": 11,
+    "experiments": 14,
+    "sealed": 13,
     "open": 1,
     "failed": 1,
-    "held_up": 2,
-    "sessions": 31
+    "held_up": 1,
+    "sessions": 33
   },
   "fingerprint_of": "sha256 of the claim, a newline, then the test (UTF-8)",
   "questions": [
@@ -187,7 +187,7 @@
       "state": "sealed",
       "fingerprint": "eca1af52df5973466e84671c4e064a5700df8a9868fa22c1948a71e7d94a08c1",
       "fixed_at": "2026-11-16T20:52:00Z",
-      "stage": "result held",
+      "stage": "in progress",
       "question": "q-d7177f8c"
     },
     {
@@ -205,6 +205,22 @@
       "fixed_at": "2026-11-17T17:55:00Z",
       "stage": "designed",
       "question": "q-fecdbf71"
+    },
+    {
+      "id": "x-016cca92",
+      "state": "sealed",
+      "fingerprint": "016cca92a86dab57c8eb0e69a805bc53fbab1e56341833bce21fc44498b03b88",
+      "fixed_at": "2026-11-20T22:53:00Z",
+      "stage": "designed",
+      "question": "q-80d7f053"
+    },
+    {
+      "id": "x-31b3cd50",
+      "state": "sealed",
+      "fingerprint": "31b3cd5096aabb010798f6daa3985b0e0fb64548c1b714fe1b8f5ae6902ae9a7",
+      "fixed_at": "2026-11-20T22:53:00Z",
+      "stage": "designed",
+      "question": "q-80d7f053"
     }
   ],
   "timeline": [
@@ -412,6 +428,18 @@
       "experiment": "x-9495f290",
       "by": "crawler",
       "result": "held up"
+    },
+    {
+      "at": "2026-11-20T22:53:00Z",
+      "what": "designed",
+      "experiment": "x-31b3cd50",
+      "by": "crawler"
+    },
+    {
+      "at": "2026-11-20T22:53:00Z",
+      "what": "designed",
+      "experiment": "x-016cca92",
+      "by": "crawler"
     }
   ],
   "interventions": [
