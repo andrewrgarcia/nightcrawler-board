@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated_at": "2026-11-20T22:53:00Z",
+  "updated_at": "2026-11-21T01:52:26Z",
   "runs": {
     "utc": [
       "17:46",
@@ -15,7 +15,7 @@
     "open": 1,
     "failed": 1,
     "held_up": 1,
-    "sessions": 33
+    "sessions": 35
   },
   "fingerprint_of": "sha256 of the claim, a newline, then the test (UTF-8)",
   "questions": [
@@ -440,6 +440,20 @@
       "what": "designed",
       "experiment": "x-016cca92",
       "by": "crawler"
+    },
+    {
+      "at": "2026-11-21T01:48:44Z",
+      "what": "ran",
+      "experiment": "x-9495f290",
+      "by": "crawler",
+      "result": null
+    },
+    {
+      "at": "2026-11-21T01:52:26Z",
+      "what": "checked",
+      "experiment": "x-9495f290",
+      "by": "crawler",
+      "result": "inconclusive"
     }
   ],
   "interventions": [
