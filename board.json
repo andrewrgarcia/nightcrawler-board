@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated_at": "2026-11-24T22:57:21Z",
+  "updated_at": "2026-11-25T01:47:00Z",
   "runs": {
     "utc": [
       "17:46",
@@ -14,8 +14,8 @@
     "sealed": 13,
     "open": 1,
     "failed": 1,
-    "held_up": 1,
-    "sessions": 41
+    "held_up": 0,
+    "sessions": 42
   },
   "fingerprint_of": "sha256 of the claim, a newline, then the test (UTF-8)",
   "questions": [
@@ -219,7 +219,7 @@
       "state": "sealed",
       "fingerprint": "31b3cd5096aabb010798f6daa3985b0e0fb64548c1b714fe1b8f5ae6902ae9a7",
       "fixed_at": "2026-11-20T22:53:00Z",
-      "stage": "result held",
+      "stage": "in progress",
       "question": "q-80d7f053"
     }
   ],
@@ -496,6 +496,13 @@
       "experiment": "x-31b3cd50",
       "by": "crawler",
       "result": "inconclusive"
+    },
+    {
+      "at": "2026-11-25T01:47:00Z",
+      "what": "design round",
+      "experiment": null,
+      "by": "crawler",
+      "result": "no experiment passed review"
     }
   ],
   "interventions": [
