@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated_at": "2026-11-27T01:52:30Z",
+  "updated_at": "2026-11-27T22:47:57Z",
   "runs": {
     "utc": [
       "17:46",
@@ -15,7 +15,7 @@
     "open": 1,
     "failed": 1,
     "held_up": 2,
-    "sessions": 52
+    "sessions": 53
   },
   "fingerprint_of": "sha256 of the claim, a newline, then the test (UTF-8)",
   "questions": [
@@ -594,6 +594,13 @@
       "experiment": "x-6a78749c",
       "by": "crawler",
       "result": "held up"
+    },
+    {
+      "at": "2026-11-27T22:47:57Z",
+      "what": "ran",
+      "experiment": "x-6a78749c",
+      "by": "crawler",
+      "result": "nothing to grade"
     }
   ],
   "interventions": [
