@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated_at": "2026-11-27T22:47:57Z",
+  "updated_at": "2026-11-28T01:53:00Z",
   "runs": {
     "utc": [
       "17:46",
@@ -14,8 +14,8 @@
     "sealed": 16,
     "open": 1,
     "failed": 1,
-    "held_up": 2,
-    "sessions": 53
+    "held_up": 3,
+    "sessions": 55
   },
   "fingerprint_of": "sha256 of the claim, a newline, then the test (UTF-8)",
   "questions": [
@@ -187,7 +187,7 @@
       "state": "sealed",
       "fingerprint": "eca1af52df5973466e84671c4e064a5700df8a9868fa22c1948a71e7d94a08c1",
       "fixed_at": "2026-11-16T20:52:00Z",
-      "stage": "in progress",
+      "stage": "result held",
       "question": "q-d7177f8c"
     },
     {
@@ -195,7 +195,7 @@
       "state": "sealed",
       "fingerprint": "9495f2901dce2efe077fcb57d18a3adfcb12a6a6eb7c4e23470c5be6931e8f60",
       "fixed_at": "2026-11-17T17:51:00Z",
-      "stage": "in progress",
+      "stage": "result held",
       "question": "q-80d7f053"
     },
     {
@@ -235,7 +235,7 @@
       "state": "sealed",
       "fingerprint": "6a78749c4c75ace692fc561a8e945925647577d15aaecfd55ff0e32f23de0c96",
       "fixed_at": "2026-11-25T22:52:00Z",
-      "stage": "result held",
+      "stage": "in progress",
       "question": "q-d7177f8c"
     },
     {
@@ -601,6 +601,20 @@
       "experiment": "x-6a78749c",
       "by": "crawler",
       "result": "nothing to grade"
+    },
+    {
+      "at": "2026-11-28T01:49:00Z",
+      "what": "ran",
+      "experiment": "x-eca1af52",
+      "by": "crawler",
+      "result": null
+    },
+    {
+      "at": "2026-11-28T01:53:00Z",
+      "what": "checked",
+      "experiment": "x-eca1af52",
+      "by": "crawler",
+      "result": "inconclusive"
     }
   ],
   "interventions": [
